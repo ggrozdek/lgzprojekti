@@ -485,14 +485,44 @@ button{ font: inherit; }
 }
 
 @media (max-width: 520px){
-  .hero__actions{ gap: 10px; }
-  .btn{ min-width: 0; width: 100%; }
-  .hero__actions .btn{
-    width: 46%;
-    min-width: 0;
-    padding: 14px 12px;
+
+  .hero{
+    padding: 16px;
   }
+
+  .hero__content{
+    width: 100%;
+    max-width: 92vw;
+    margin: 0 auto;
+    padding: 28px 18px;
+  }
+
+  .logo-large{
+    width: 82vw;
+    max-width: 360px;
+  }
+
+  .hero__subtitle{
+    text-align: center;
+    padding: 0;
+  }
+
+  .hero__actions{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn{
+    width: 100%;
+  }
+
+  .hero__meta{
+    justify-content: center;
+    gap: 8px;
+  }
+
 }
+
 
 @media (max-width: 420px){
   .hero__actions{ flex-wrap: wrap; }
@@ -500,3 +530,4 @@ button{ font: inherit; }
   .brand-text{ display: none; }
   .logo-small{ height: 34px; }
 }
+
